@@ -1,0 +1,33 @@
+package com.github.pfmiles.model;
+
+/**
+ * All implemented operators.
+ *
+ * @author pf-miles
+ */
+public enum Operators implements Operator {
+    add {
+        @Override
+        public Double computeDouble(Number left, Number right) {
+            return left.doubleValue() + right.doubleValue();
+        }
+
+        @Override
+        public Integer computeInt(Number left, Number right) {
+            return left.intValue() + right.intValue();
+        }
+    },
+
+    minus {
+        @Override
+        public Double computeDouble(Number left, Number right) {
+            return left.doubleValue() - right.doubleValue();
+        }
+
+        @Override
+        public Integer computeInt(Number left, Number right) {
+            return left.intValue() - right.intValue();
+        }
+    }
+
+}
