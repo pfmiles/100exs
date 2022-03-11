@@ -4,10 +4,12 @@
  */
 package com.github.pfmiles.model;
 
+import com.github.pfmiles.impl.ExComputer;
+
 import java.util.List;
 
 /**
- * An exercise.
+ * An exercise. It's a polynomial equation.
  *
  * @author pf-miles
  * <p>
@@ -16,6 +18,7 @@ import java.util.List;
 public class Ex {
     private List<Number> numbers;
     private List<Operator> ops;
+    private Number result;
 
     public List<Number> getNumbers() {
         return numbers;
@@ -31,5 +34,14 @@ public class Ex {
 
     public void setOps(List<Operator> ops) {
         this.ops = ops;
+    }
+
+    public Number getResult() {
+        if (this.result == null) this.result = ExComputer.compute(this);
+        return result;
+    }
+
+    public void setResult(Number result) {
+        this.result = result;
     }
 }

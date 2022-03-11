@@ -25,7 +25,7 @@ public class ExComputerTest {
         // random tests
         for (int i = 0; i < 1000000; i++) {
             Pair<Ex, Number> exAndExp = generateTestCase();
-            Assert.assertEquals(exAndExp.getRight(), ExComputer.compute(exAndExp.getLeft()));
+            Assert.assertEquals(exAndExp.getRight(), exAndExp.getLeft().getResult());
         }
     }
 
