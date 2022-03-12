@@ -16,6 +16,10 @@ public enum Operators implements Operator {
         public Integer computeInt(Number left, Number right) {
             return left.intValue() + right.intValue();
         }
+
+        public String toString() {
+            return "+";
+        }
     },
 
     minus {
@@ -27,6 +31,10 @@ public enum Operators implements Operator {
         @Override
         public Integer computeInt(Number left, Number right) {
             return left.intValue() - right.intValue();
+        }
+
+        public String toString() {
+            return "-";
         }
     }
 

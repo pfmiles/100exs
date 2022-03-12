@@ -5,6 +5,7 @@
 package com.github.pfmiles.model;
 
 import com.github.pfmiles.impl.ExComputer;
+import org.apache.commons.collections4.CollectionUtils;
 
 import java.util.List;
 
@@ -43,5 +44,17 @@ public class Ex {
 
     public void setResult(Number result) {
         this.result = result;
+    }
+
+    public String toPrettyPrintString(boolean withResult) {
+        if (CollectionUtils.isEmpty(numbers)) return "";
+        StringBuilder sb = new StringBuilder();
+        sb.append(this.numbers.get(0));
+        for (int i = 0; i < this.ops.size(); i++) {
+            sb.append(' ').append(this.ops.get(i)).append(' ').append(this.numbers.get(i + 1));
+        }
+        sb.append(" =");
+        if (withResult) sb.append(' ').append(this.getResult());
+        return sb.toString();
     }
 }
