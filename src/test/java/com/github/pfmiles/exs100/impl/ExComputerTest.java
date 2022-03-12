@@ -2,11 +2,11 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2022 All Rights Reserved.
  */
-package com.github.pfmiles.impl;
+package com.github.pfmiles.exs100.impl;
 
-import com.github.pfmiles.model.Ex;
-import com.github.pfmiles.model.Operator;
-import com.github.pfmiles.model.Operators;
+import com.github.pfmiles.exs100.model.Ex;
+import com.github.pfmiles.exs100.model.Operator;
+import com.github.pfmiles.exs100.model.Operators;
 import org.apache.commons.lang3.tuple.Pair;
 import org.junit.Assert;
 import org.junit.Test;

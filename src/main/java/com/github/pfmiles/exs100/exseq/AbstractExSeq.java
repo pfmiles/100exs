@@ -1,8 +1,8 @@
-package com.github.pfmiles.exseq;
+package com.github.pfmiles.exs100.exseq;
 
-import com.github.pfmiles.impl.FullArrangementIterator;
-import com.github.pfmiles.model.Ex;
-import com.github.pfmiles.model.Operator;
+import com.github.pfmiles.exs100.impl.FullArrangementIterator;
+import com.github.pfmiles.exs100.model.Ex;
+import com.github.pfmiles.exs100.model.Operator;
 import org.apache.commons.lang3.ArrayUtils;
 
 import java.util.ArrayList;

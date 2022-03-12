@@ -1,4 +1,4 @@
-package com.github.pfmiles.model;
+package com.github.pfmiles.exs100.model;
 
 /**
  * A binary operator in math equations.

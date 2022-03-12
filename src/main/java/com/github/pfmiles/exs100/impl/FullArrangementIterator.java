@@ -2,7 +2,7 @@
  * Alipay.com Inc.
  * Copyright (c) 2004-2022 All Rights Reserved.
  */
-package com.github.pfmiles.impl;
+package com.github.pfmiles.exs100.impl;
 
 import org.apache.commons.lang3.ArrayUtils;
 
