@@ -57,4 +57,9 @@ public class Ex {
         if (withResult) sb.append(' ').append(this.getResult());
         return sb.toString();
     }
+
+    @Override
+    public String toString() {
+        return this.toPrettyPrintString(false);
+    }
 }
